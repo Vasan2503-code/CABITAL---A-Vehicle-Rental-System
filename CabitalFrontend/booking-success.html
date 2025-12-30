@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABITAL | Booking Success</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>CAB<span>ITAL</span></h1>
+        </div>
+        <div class="content">
+            <a href="home.html" style="color: inherit; text-decoration:none;"><p>Home</p></a>
+            <div class="dropdown">
+                <p>Book vehicle</p>
+                <div class="dropdown-content">
+                    <a href="bookvehicle.html">Book now</a>
+                    <a href="cars.html">Cars</a>
+                    <a href="bikes.html">Bikes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>Lists</p>
+                <div class="dropdown-content">
+                    <a href="cars.html">Cars</a>
+                    <a href="bikes.html">Bikes</a>
+                    <a href="commercialvehicles.html">Commercial Vehicle</a>
+                </div>
+            </div>
+            <p>Contact us</p>
+            <img src="./images/avatar.png" alt="avatar" id="gif">
+            <a href="login.html" style="color: inherit;"><button id="signup">Sign up/Login</button></a>
+        </div>
+    </div>
+
+    <section class="page-hero" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="hero-content">
+            <p>All set!</p>
+            <h1>Your CABITAL booking is confirmed</h1>
+            <p class="muted">Find your booking details below. We’ve also emailed you a copy.</p>
+        </div>
+    </section>
+
+    <section class="booking-wrapper">
+        <div class="summary-card">
+            <h2>Booking details</h2>
+            <div id="success-grid" class="summary-grid"></div>
+        </div>
+        <div class="summary-card">
+            <h2>Status</h2>
+            <div id="status-chip" class="pill" style="display:inline-block;">Loading...</div>
+            <p class="muted" id="status-note" style="margin-top:8px;"></p>
+            <div style="margin-top:14px;">
+                <a href="bookvehicle.html" class="cta" style="display:inline-block; text-decoration:none; text-align:center; width:auto; padding-inline:18px;">Book another ride</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

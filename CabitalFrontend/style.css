@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+            display: flex;
+            width: 100%;
+            height: 75px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 5px; 
+            position: fixed;
+            background-color: white;
+            z-index: 1000;
+        }
+        
+        .logo {
+            margin-left: 50px;
+            margin-top: 5px;
+            color: rgb(0, 152, 140);
+        }
+        
+        .content {
+            display: flex;
+            font-size: larger;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 350px;
+            margin-top: 15px;
+            color: rgb(0, 152, 140);
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+            display: flex; 
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;  
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 150px;
+        }
+        
+        .dropdown-content a {
+            text-decoration: none;
+            color: rgb(0, 152, 140);
+            display: block;
+            padding: 5px 10px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgba(0, 152, 140, 0.1);
+        }
+        
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }         
+      p {
+            padding-right: 30px;
+            padding-left: 30px;
+            cursor: pointer;
+        }
+
+        #signup {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-seri;
+            background-color: rgb(0, 152, 140);
+            margin-left: 10px;
+            margin-top: 15px;
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+        }
+
+        .content p:hover {
+            text-decoration: underline;
+        }
+
+        #gif {
+            width: 40px;
+            height: 40px;
+            padding-left: 50px;
+            margin-top: 9px;
+        }
+
+        .logo span {
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            display: flex;
+            padding-top:200px;
+            margin-left: 100px;
+            /*justify-content: center;*/
+            /*min-height: 100vh;*/
+            font-size: 3rem;
+            font-family: Arial, sans-serif;
+            /*position: relative;*/
+        }
+
+        .container .text {
+            position: relative;
+            color: black;
+            font-weight: 100px;
+        }
+
+        .container .text.first-text {
+            color:rgb(0, 152, 140);
+            margin-right: 10px;
+        }
+
+        .text .sec-text {
+            display: block;
+            overflow: hidden;
+        }
+
+        .text.sec-text:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color:white;
+            border-left: 2px ;
+            animation: animate 4s infinite;
+        }
+
+        @keyframes animate {
+           40%, 60% {
+               left: 100%;
+           }
+           100% {
+               left:0%;
+           }
+        }
+        .rental-container {
+            padding: 20px;
+            border-radius: 10px;
+            width: 700px;
+            margin-left: 100px;
+            box-shadow: 0px 0px 20px rgba(127, 2, 2, 0.5);
+        }
+
+        .vehicle-selection {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .vehicle {
+            background-color: rgb(0, 152, 140);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            flex: 1;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .vehicle:hover, .vehicle.active {
+            background-color: rgb(4, 77, 71);
+        }
+
+        .search-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .date-time {
+            display: flex;
+            gap: 10px;
+        }
+
+        .date-time input, .date-time select {
+            flex: 1;
+        }
+
+        .find-btn {
+            background-color: rgba(0, 152, 140);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button{
+            border-radius: 10px; 
+            transition: border-radius 0.3s ease-in-out; 
+        }
+        .find-btn:hover {
+            border-radius: 25px;
+            background-color: rgb(1, 80, 73);
+        }
+
+        #booking-text {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .bg-img {
+            background-image: url('./images/bg_imgcar.png');
+            background-size: cover;
+            background-position: center;
+            width: 1510px;    
+            height: 760px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .whole {
+            position: relative;
+        }
+        
+        .rental-container {
+            position: absolute;
+            top: 50%;
+            left: -4%;
+            transform: translateY(-50%);
+            background-color: white;
+            z-index: 10;
+        }
+        .extra{
+            margin-top: 100px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:200;
+        }
+        .extra h1{
+            color : rgb(1, 80, 73);
+        }
+        .extra p{
+            font-size: x-large;
+        }
+        .info-card {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: 0.4s;
+
+          }
+          
+          .content1{
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+          }
+          
+          h2, h3 {
+            margin: 5px 0;
+            color: #000;
+          }
+          
+          .corner {
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background-color: #00988c;
+            transition: transform 0.4s ease-in-out;
+            z-index: 1;
+          }
+          
+          .top-left {
+            top: 0;
+            left: 0;
+            border-top-left-radius: 5px;
+          }
+          
+          .bottom-right {
+            bottom: 0;
+            right: 0;
+            border-bottom-right-radius: 5px;
+          }
+          
+          .info-card:hover .top-left {
+            transform: translateY(160px);
+          }
+          
+          .info-card:hover .bottom-right {
+            transform: translateY(-160px);
+          }
+          .infomative{
+            display: flex;
+            align-items: center;
+            margin-left: 200px;
+            gap:50px;
+          }
+          #img{@import url(
+            "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+            }
+            
+            /* body {
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 30px;
+                background-color: rgb(231, 231, 231);
+            }
+            
+            header {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+             */
+            /* .heading {
+                color: green;
+            }
+            
+            .title {
+                font-weight: 400;
+                letter-spacing: 1.5px;
+            }
+/*             
+            .container {
+                height: 600px;
+                width: 500px;
+                background-color: white;
+                box-shadow: 8px 8px 20px rgb(128, 128, 128);
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .btn {
+                height: 60px;
+                width: 300px;
+                margin: 20px auto;
+                box-shadow: 10px 10px 30px rgb(254, 215, 188);
+                border-radius: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+             */
+           
+             
+            /* .login-box,
+            .signup-box {
+                height: 100%;
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0px 40px;
+            }
+            
+            .login-box {
+                gap: 50px;
+            }
+            
+            .signup-box {
+                gap: 30px;
+            }
+            
+            .ele {
+                height: 60px;
+                width: 400px;
+                outline: none;
+                border: none;
+                color: rgb(77, 77, 77);
+                background-color: rgb(240, 240, 240);
+                border-radius: 50px;
+                padding-left: 30px;
+                font-size: 18px;
+            }
+            
+            .clkbtn {
+                height: 60px;
+                width: 150px;
+                border-radius: 50px;
+                background-image: linear-gradient(to right,
+                        rgb(255, 195, 110),
+                        rgb(255, 146, 91));
+                font-size: 22px;
+                border: none;
+                cursor: pointer;
+            }
+            
+            /* For Responsiveness of the page */
+            
+            @media screen and (max-width: 650px) {
+                .container {
+                    height: 600px;
+                    width: 300px;
+                }
+            
+                .title {
+                    font-size: 15px;
+                }
+            
+                .btn {
+                    height: 50px;
+                    width: 200px;
+                    margin: 20px auto;
+                }
+            
+                .login,
+                .signup {
+                    font-size: 19px;
+                }
+            
+                .slider {
+                    height: 50px;
+                    width: 100px;
+                    left: 50px;
+                }
+            
+                .moveslider {
+                    left: 150px;
+                }
+            
+                .form-section {
+                    height: 500px;
+                    width: 600px;
+                }
+            
+                .form-section-move {
+                    left: -300px;
+                }
+            
+                .login-box,
+                .signup-box {
+                    height: 100%;
+                    width: 300px;
+                }
+            
+                .ele {
+                    height: 50px;
+                    width: 250px;
+                    font-size: 15px;
+                }
+            
+                .clkbtn {
+                    height: 50px;
+                    width: 130px;
+                    font-size: 19px;
+                }
+            }
+            
+            @media screen and (max-width: 320px) {
+                .container {
+                    height: 600px;
+                    width: 250px;
+                }
+            
+                .heading {
+                    font-size: 30px;
+                }
+            
+                .title {
+                    font-size: 10px;
+                }
+            
+                .btn {
+                    height: 50px;
+                    width: 200px;
+                    margin: 20px auto;
+                }
+            
+                .login,
+                .signup {
+                    font-size: 19px;
+                }
+            
+                .slider {
+                    height: 50px;
+                    width: 100px;
+                    left: 27px;
+                }
+            
+                .moveslider {
+                    left: 127px;
+                }
+            
+                .form-section {
+                    height: 500px;
+                    width: 500px;
+                }
+            
+                .form-section-move {
+                    left: -250px;
+                }
+            
+                .login-box,
+                .signup-box {
+                    height: 100%;
+                    width: 250px;
+                }
+            
+                .ele {
+                    height: 50px;
+                    width: 220px;
+                    font-size: 15px;
+                }
+            
+                .clkbtn {
+                    height: 50px;
+                    width: 130px;
+                    font-size: 19px;
+                }
+            }
+                        width:50px;
+                        height: 50px;
+                        margin-bottom: 5px;
+                      }
+            .footer{
+                width: 100%;
+                height: 40px;
+                background-color: #000;
+                text-align: center;
+                color: white;
+                justify-content: center;
+                padding-top: 30px;
+            }

@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CabitalBackendApplication",
+            "request": "launch",
+            "mainClass": "com.example.CabitalBackend.CabitalBackendApplication",
+            "projectName": "cabital-backend"
+        },
+        {
+            "type": "java",
+            "name": "CabitalBackendApplication",
+            "request": "launch",
+            "mainClass": "com.example.CabitalBackend.CabitalBackendApplication",
+            "projectName": "VolunteerBackend"
+        },
+        {
+            "type": "java",
+            "name": "CabitalBackendApplication",
+            "request": "launch",
+            "mainClass": "com.example.CabitalBackend.CabitalBackendApplication",
+            "projectName": "CabitalBackend"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open summa.html",
+            "file": "c:\\Users\\srini\\OneDrive\\Documents\\VEHICLE RENTAL SYSTEM\\summa.html"
+        }
+    ]
+}

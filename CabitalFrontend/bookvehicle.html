@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABITAL | Book Vehicle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h1>CAB<span>ITAL</span></h1>
+        </div>
+        <div class="content">
+            <a href="home.html" style="color: inherit; text-decoration:none;"><p>Home</p></a>
+            <div class="dropdown">
+                <p>Book vehicle</p>
+                <div class="dropdown-content">
+                    <a href="bookvehicle.html">Book now</a>
+                    <a href="cars.html">Cars</a>
+                    <a href="bikes.html">Bikes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <p>Lists</p>
+                <div class="dropdown-content">
+                    <a href="cars.html">Cars</a>
+                    <a href="bikes.html">Bikes</a>
+                    <a href="commercialvehicles.html">Commercial Vehicle</a>
+                </div>
+            </div>
+            <p>Contact us</p>
+            <img src="./images/avatar.png" alt="avatar" id="gif">
+            <a href="login.html" style="color: inherit;"><button id="signup">Sign up/Login</button></a>
+        </div>
+    </div>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <p>Book with confidence</p>
+            <h1>Review &amp; Confirm your CABITAL ride</h1>
+            <p>Seamless pickup, transparent pricing, secure payments.</p>
+        </div>
+    </section>
+
+    <section class="booking-wrapper">
+        <div class="booking-card">
+            <h2>Your booking details</h2>
+            <p class="muted">Auto-filled from your previous selection. Edit anytime.</p>
+            <div id="prefill-banner" class="message-banner hidden">Loaded your selection. You can adjust details before searching.</div>
+
+            <div class="booking-grid">
+                <div>
+                    <label class="label">Vehicle Type</label>
+                    <select id="vehicle-type" class="select">
+                        <option>Car</option>
+                        <option>Van</option>
+                        <option>carrier vehicles</option>
+                        <option>Bikes</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label">Vehicle Model</label>
+                    <input id="vehicle-model" class="input" placeholder="Swift, Innova, Classic 350...">
+                </div>
+                <div>
+                    <label class="label">Pickup Location</label>
+                    <input id="pickup-location" class="input" placeholder="Enter pickup location">
+                </div>
+                <div>
+                    <label class="label">Drop Location</label>
+                    <input id="drop-location" class="input" placeholder="Enter drop location">
+                </div>
+                <div>
+                    <label class="label">Pickup Date</label>
+                    <input type="date" id="start-date" class="input">
+                </div>
+                <div>
+                    <label class="label">Pickup Time</label>
+                    <input type="time" id="start-time" class="input" value="07:00">
+                </div>
+                <div>
+                    <label class="label">Return Date</label>
+                    <input type="date" id="end-date" class="input">
+                </div>
+                <div>
+                    <label class="label">Return Time</label>
+                    <input type="time" id="end-time" class="input" value="10:00">
+                </div>
+                <div>
+                    <label class="label">Contact Name</label>
+                    <input id="contact-name" class="input" placeholder="Who will pick up the vehicle?">
+                </div>
+                <div>
+                    <label class="label">Contact Phone</label>
+                    <input id="contact-phone" class="input" placeholder="Phone number">
+                </div>
+                <div class="full">
+                    <button id="search-available" class="cta">Check availability</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="available-card">
+            <h3>Available vehicles</h3>
+            <p class="muted" id="available-hint">Search to see vehicles that match your dates and city.</p>
+            <div id="vehicles-list" class="vehicle-list"></div>
+        </div>
+    </section>
+
+    <section class="booking-wrapper">
+        <div id="price-panel" class="price-panel hidden">
+            <h2>Booking Details & Pricing Summary</h2>
+            <div class="summary-grid" id="price-summary"></div>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button id="proceed-to-pay" class="cta" style="flex: 1;">Proceed to Pay</button>
+                <button onclick="goBackToSearch()" class="cta" style="flex: 1; background-color: #999;">Back to Search</button>
+            </div>
+        </div>
+
+        <div id="qr-panel" class="qr-panel hidden">
+            <h2>Pay securely</h2>
+            <p id="qr-message" class="text-center muted"></p>
+            <img id="qr-image" alt="Payment QR" style="max-width: 300px; margin: 20px auto; display: block;">
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+                <button id="confirm-payment" class="cta" style="flex: 1;">Payment done? Confirm &amp; continue</button>
+                <button onclick="goBackToSearch()" class="cta" style="flex: 1; background-color: #999;">Back</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABITAL</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo">
+            <h1>CAB<span>ITAL</span></h1>
+        </div>
+        <div class="content">
+            <p>Home</p>
+            <div class="dropdown">       
+                <p>Book vehicle</p>
+                <div class="dropdown-content">
+                    <a href="bookvehicle.html">Book now</a>
+                    <a href="cars.html">Cars</a>
+                    <a href="bikes.html">Bikes</a>
+                </div> 
+            </div> 
+            <div class="dropdown">
+                <p>Lists</p>
+                <div class="dropdown-content">
+                    <a href="cars.html">Cars</a>
+                    <a href="bikes.html">Bikes</a>
+                    <a href="commercialvehicles.html">Commercial Vehicle</a>
+                </div>
+            </div>
+            <p>Contact us</p>
+            <img src="./images/avatar.png" alt="Description of the GIF" id="gif">
+            <a href="login.html" style="color: inherit;"><button id="signup" >Sign up/Login</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <span class="text first-text">CABITAL</span><br>
+       <br> <span>
+        <div class="text sec-text">Rent Drive Explore</div></span>
+    </div>
+    <div class="whole">
+    <div class="bg-img"></div>
+    <div class="rental-container" id="formvalid">
+        <h3></h3>
+
+        <div class="vehicle-selection">
+            <div class="vehicle"> Car</div>
+            <div class="vehicle"> Van</div>
+            <div class="vehicle">carrier vehicles</div>
+            <div class="vehicle">Bikes</div>
+        </div>
+
+        <div id="booking-text">Select a vehicle to book</div>
+        
+        <div class="search-box">
+            <div class="form-group">
+                <label>Choose Vehicle Model</label>
+                <select id="vehicle-model">
+                    <option>Select a vehicle first</option>
+                </select>
+            </div>
+
+            <div class="form-group" >
+                <label>Pick Up Location</label>
+                <input type="text" placeholder="Enter your pickup location" id="location">
+                <span id="locerror"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Drop Off Location</label>
+                <input type="text" placeholder="Enter your dropoff location" id="droploc">
+                <span id="droplocerror"></span>
+            </div>
+
+            <div class="date-time">
+                <div class="form-group">
+                    <label>Pick Up Date & Time</label>
+                    <input type="date" id="picdate">
+                    <select id="picktime">
+                        <option>07:00</option>
+                        <option>10:00</option>
+                        <option>13:00</option>
+                        <option>16:00</option>
+                        <option>19:00</option>
+                    </select>
+                    <span id="picuperror"></span>
+                </div>
+                <div class="form-group">
+                    <label>Return Date & Time</label>
+                    <input type="date" id="retdate">
+                    <select id="rettime">
+                        <option>07:00</option>
+                        <option>10:00</option>
+                        <option>13:00</option>
+                        <option>16:00</option>
+                        <option>19:00</option>
+                    </select>
+                    <span id="reterror"></span>
+                </div>
+            </div>
+
+            <button class="find-btn" id="subbtn">Find a Vehicle</button>
+        </div>
+    </div>
+
+</div>
+<div class="extra">
+    <p>--Find your needs of cars and bikes here--</p>
+    <h1>Wide range of commercial cars and Trucks,<br> available at low price</h1>
+</div><br><br>
+<div class="infomative">
+    <div class="info-card">
+        <div class="corner top-left"></div>
+            <div class="corner bottom-right"></div>
+            <div class="content1">
+                <img src="./images/steering-wheel.png" alt="car icon" id="img"/>
+              <h3>Client Served</h3>
+                <h2 id="counter1">100+</h2>
+            </div>
+    </div>
+    <div class="info-card">
+        <div class="corner top-left"></div>
+            <div class="corner bottom-right"></div>
+            <div class="content1">
+                <img src="./images/customer.png" alt="happy icon" id="img"/>
+              <h3>Happy Customers</h3>
+                <h2 id="counter2">100+</h2>
+            </div>
+    </div>
+    <div class="info-card">
+        <div class="corner top-left"></div>
+            <div class="corner bottom-right"></div>
+            <div class="content1">
+                <img src="./images/stocks.png" alt="happy icon" id="img"/>
+              <h3>Vehicle in stock</h3>
+                <h2 id="counter3">100+</h2>
+            </div>
+    </div>
+    <div class="info-card">
+        <div class="corner top-left"></div>
+            <div class="corner bottom-right"></div>
+            <div class="content1">
+                <img src="./images/experience.png" alt="happy icon" id="img"/>
+              <h3>Experience</h3>
+                <h2 id="counter4">+</h2>
+            </div>
+    </div> 
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <footer class="footer">
+    © 2025 CABITAL. All Rights Reserved.
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html> 

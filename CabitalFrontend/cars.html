@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CABITAL - Indian Car Rentals</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+    .car-card {
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .car-card img {
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .car-card h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .car-card p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .car-card button {
+      margin-top: 15px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .car-card button:hover {
+      background-color: #0056b3;
+    }
+    .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .car-card img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      background-color: #343a40;
+      padding: 20px;
+    }
+    footer p {
+      font-size: 1rem;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .car-card h4 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body data-vehicle-type="Car">
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">CABITAL</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Book Your Indian Ride with CABITAL</h1>
+      <p>Affordable, reliable, and fast car rentals across India</p>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/41785/Maruti-Suzuki-Dzire.jpg" class="img-fluid" alt="Dzire">
+          <h4 class="mt-3">Maruti Suzuki Dzire</h4>
+          <p>Comfortable sedan, perfect for city and highway travel.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/39043/Tata-Nexon.jpg" class="img-fluid" alt="Nexon">
+          <h4 class="mt-3">Tata Nexon</h4>
+          <p>Top-rated compact SUV with safety and style.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/37254/Mahindra-Scorpio.jpg" class="img-fluid" alt="Scorpio">
+          <h4 class="mt-3">Mahindra Scorpio</h4>
+          <p>Rugged SUV for adventurous road trips.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/39091/Hyundai-Verna.jpg" class="img-fluid" alt="Verna">
+          <h4 class="mt-3">Hyundai Verna</h4>
+          <p>Stylish and powerful sedan with modern features.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/41485/Tata-Harrier.jpg" class="img-fluid" alt="Harrier">
+          <h4 class="mt-3">Tata Harrier</h4>
+          <p>Bold SUV built for performance and comfort.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/37743/Kia-Seltos.jpg" class="img-fluid" alt="Seltos">
+          <h4 class="mt-3">Kia Seltos</h4>
+          <p>Feature-packed SUV with dynamic looks.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/40889/MG-Hector.jpg" class="img-fluid" alt="Hector">
+          <h4 class="mt-3">MG Hector</h4>
+          <p>Tech-loaded SUV with spacious interiors.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/37111/Maruti-Suzuki-Ertiga.jpg" class="img-fluid" alt="Ertiga">
+          <h4 class="mt-3">Maruti Suzuki Ertiga</h4>
+          <p>Spacious MPV ideal for families and long drives.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/41011/Toyota-Innova.jpg" class="img-fluid" alt="Innova">
+          <h4 class="mt-3">Toyota Innova Crysta</h4>
+          <p>Premium MPV loved for comfort and durability.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/41147/Maruti-Brezza.jpg" class="img-fluid" alt="Brezza">
+          <h4 class="mt-3">Maruti Suzuki Brezza</h4>
+          <p>Popular compact SUV with high fuel efficiency.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/39059/Hyundai-Creta.jpg" class="img-fluid" alt="Creta">
+          <h4 class="mt-3">Hyundai Creta</h4>
+          <p>One of India’s best-selling compact SUVs.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/40665/Toyota-Fortuner.jpg" class="img-fluid" alt="Fortuner">
+          <h4 class="mt-3">Toyota Fortuner</h4>
+          <p>Premium full-size SUV for rugged performance.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="car-card">
+          <img src="https://imgd.aeplcdn.com/600x337/cw/ec/39045/Tata-Punch.jpg" class="img-fluid" alt="Punch">
+          <h4 class="mt-3">Tata Punch</h4>
+          <p>Micro-SUV with bold looks and compact design.</p>
+          <button class="btn btn-primary">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+© 2025 CABITAL. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html> 
